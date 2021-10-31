@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from "components/app.js"
 
 
-const name = React.createElement('h1', {}, 'My node');
+// const HelloWorld = () => {
+//   console.log("Debug here");
+//     return (
+//         <h1>
+//             hello
+//         </h1>
+//     );
+// }
 
-const container = React.createElement('div', {}, name);
-
-ReactDOM.render(
-  container,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // function component() {
 //   const element = document.createElement('div');
